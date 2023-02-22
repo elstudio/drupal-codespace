@@ -18,6 +18,7 @@ apt install -y --no-install-recommends \
   build-essential
 
 
+export PHP_INI_DIR=/usr/local/etc/php
 set -eux
 docker-php-ext-configure gd \
   --with-freetype \
