@@ -23,7 +23,6 @@ services:
       # - "pnpm-store:/home/vscode/.pnpm-store"
 #       - "~/.acquia:/home/vscode/.acquia" # Acquia Cloud Cli Share with host
 #       - "~/.ssh:/home/vscode/.ssh" # SSH Keys share with host
-#       - "~/.wakatime.cfg:/home/vscode/.wakatime.cfg" # Wakatime share with host
       - "../.dev:/var/www/site-dev"
       - "..:/var/www/html"
     command: sleep infinity
