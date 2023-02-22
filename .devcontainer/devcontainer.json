@@ -1,4 +1,9 @@
 {
+  "name": "Drupal MC",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/var/www/html",
+  "shutdownAction": "stopCompose",
     "build": {
         "dockerfile": "./Dockerfile",
         "context": "."
