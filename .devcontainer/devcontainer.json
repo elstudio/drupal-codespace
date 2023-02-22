@@ -27,12 +27,13 @@
         3306
     ],
     // Use 'postCreateCommand' to run commands after the container is created.
-    // "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html",
+    "postCreateCommand": "sudo a2enmod rewrite",
     // "postStartCommand": "",
 
     // Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
     "remoteUser": "vscode",
     "remoteEnv": {
+    	"APACHE_SERVER_NAME": "localhost"
     	"APACHE_DOCUMENT_ROOT": "web"
     }
 }
