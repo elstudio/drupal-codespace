@@ -2,7 +2,7 @@
 
 Run Drupal 9 inside a Codespace for development purposes.
 
-The `.devcontainer` folder contains configuration to spin up a Codespace running Apache, MySQL, PHP 8.1 and Composer. 
+The `.devcontainer` folder contains configuration to spin up a Codespace running Apache, MySQL, PHP 8.1 and Composer, based on [Microsoft's PHP devcontainer](https://github.com/devcontainers/images/tree/main/src/php).
 
 ## How to use it
 
@@ -25,3 +25,4 @@ Replace `composer.json` with your own site's version -- one that includes whatev
 This example is based on the work of @alchatti. 
 
 - [alchatti/drupal-devcontainer: VS Code development container environment for Drupal](https://github.com/alchatti/drupal-devcontainer). This setup includes some fancier stuff that we don't do here. It installs the Acquia tools, and it offers a couple of options for customizing the shell. 
+- [alchatti/drupal-devcontainer-sample-project: Sample Drupal devcontainer](https://github.com/alchatti/drupal-devcontainer-sample-project) shows this in action for a default Drupal 10 build for Acquia.

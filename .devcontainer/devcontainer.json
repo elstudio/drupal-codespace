@@ -23,7 +23,7 @@
     },
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     "forwardPorts": [
-        80,
+        8080,
         3306
     ],
     "postCreateCommand": "sudo ./.devcontainer/postCreateCommand.sh",
