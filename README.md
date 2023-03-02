@@ -25,4 +25,3 @@ Replace `composer.json` with your own site's version -- one that includes whatev
 This example is based on the work of @alchatti. 
 
 - [alchatti/drupal-devcontainer: VS Code development container environment for Drupal](https://github.com/alchatti/drupal-devcontainer). This setup includes some fancier stuff that we don't do here. It installs the Acquia tools, and it offers a couple of options for customizing the shell. 
-- [alchatti/drupal-devcontainer-sample-project: Sample Drupal devcontainer](https://github.com/alchatti/drupal-devcontainer-sample-project), which demonstrates @alchatti's devcontainer with a Drupal 10 composer.json install.
