@@ -14,6 +14,10 @@ services:
       - "./config/mysql.cnf:/etc/mysql/conf.d/zmysql.cnf"
       - database:/var/lib/mysql
       # - "../dump/init.sql:/docker-entrypoint-initdb.d/mydb.sql"
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
   app:
 #     image: alchatti/drupal-devcontainer:8.1
     image: mcr.microsoft.com/devcontainers/php:8.0
