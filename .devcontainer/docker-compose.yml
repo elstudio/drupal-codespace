@@ -31,6 +31,8 @@ services:
 #       - "../.dev:/var/www/site-dev"
       - "..:/var/www/html"
     command: sleep infinity
+    depends_on:
+      db
 volumes:
   database:
   # acquia:
