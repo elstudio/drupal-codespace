@@ -32,7 +32,7 @@ services:
       - "..:/var/www/html"
     command: sleep infinity
     depends_on:
-      db
+      - db
 volumes:
   database:
   # acquia:
